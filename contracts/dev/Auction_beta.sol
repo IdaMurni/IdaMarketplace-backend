@@ -15,7 +15,7 @@ interface IERC721 {
     ) external;
 }
 
-contract EnglishAuction {
+contract Auction {
     enum TimeDuration {
         OneMinute, // <- testing purpose
         Twentyfour,

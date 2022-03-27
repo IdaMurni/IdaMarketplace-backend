@@ -23,6 +23,27 @@ run app
 yarn dev
 ```
 
-<p align="center">
-  <img src="https://github.com/IdaMurni/IdaMarketplace/blob/main/public/idamarketplace.png" width="600">
-</p>
+<p>
+    How to use Auction: 
+    <ul>
+        <li>filled 3 parameter to the fields: _NFT, _NFTID, _STARTINGBID before you deployed the Auction Contract</li>
+        <li>once it is deployed, call approve(auction_id, _NFTID) function from NFT.sol</li>
+        <li>defined Auction time period. by setting we have 2, 7, 10, 15 days. for testing purpose we've set to 1Minute because we don't wat to wait until a couple days to get the result. see on ```shell
+            enum TimeDuration {
+                OneMinute, // <- testing purpose
+                Twentyfour,
+                Seven,
+                Ten,
+                Fifteen
+            }
+        ```</li>
+        <li>once it set we will able to bit the Acution.</li>
+        <li>drink coffee while waiting the bits is end!!</li>
+    </ul>
+<p>
+
+| parameter    | type    | description                 |
+|--------------|---------|-----------------------------|
+| _NFT         | address | contract address of the NFT |
+| _NFTID       | unit256 | the id of the NFT           |
+| _STARTINGBID | uint256 | value                       |
