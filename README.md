@@ -28,7 +28,8 @@ yarn dev
     <ul>
         <li>filled 3 parameter to the fields: _NFT, _NFTID, _STARTINGBID before you deployed the Auction Contract</li>
         <li>once it is deployed, call approve(auction_id, _NFTID) function from NFT.sol</li>
-        <li>defined Auction time period. by setting we have 2, 7, 10, 15 days. for testing purpose we've set to 1Minute because we don't wat to wait until a couple days to get the result. see on ```shell
+        <li>defined Auction time period. by setting we have 2, 7, 10, 15 days. for testing purpose we've set to 1Minute because we don't wat to wait until a couple days to get the result. see on </li>
+        ```shell
             enum TimeDuration {
                 OneMinute, // <- testing purpose
                 Twentyfour,
@@ -36,7 +37,7 @@ yarn dev
                 Ten,
                 Fifteen
             }
-        ```</li>
+        ```
         <li>once it set we will able to bit the Acution.</li>
         <li>drink coffee while waiting the bits is end!!</li>
     </ul>
