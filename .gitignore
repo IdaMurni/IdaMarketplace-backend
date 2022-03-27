@@ -102,3 +102,16 @@ dist
 
 # TernJS port file
 .tern-port
+
+
+#backend-dev
+.secret
+routes.js
+/variables
+/test
+/pages
+/layouts
+/Documentation
+/components
+/assets
+.DS_Store
